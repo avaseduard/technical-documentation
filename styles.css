@@ -1,0 +1,80 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  display: flex;
+  background-color: #cbf2c2;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: calibri, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 25%;
+  font-size: 1.2rem;
+  background-color: #dde0dc;
+  border-right: 3px solid black;
+  padding: 20px 5px 5px 20px;
+  overflow-y: scroll;
+}
+
+#main-doc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 30%;
+  padding: 20px 5px 0px 15px;
+}
+
+header {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#navbar > header {
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-style: italic;
+}
+
+li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#navbar li {
+  border-top: 0.5px solid black;
+  padding: 5px 0 5px 0;
+}
+
+li > a:hover {
+  color: green;
+  background-color: lightgrey;
+}
+
+code {
+  background-color: #eee;
+  padding: 0 3px 0 3px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  * {
+    font-size: 0.9rem;
+  }
+}
